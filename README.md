@@ -75,8 +75,8 @@ password-strength-checker/
 git clone https://github.com/jatin-rajputt/password-strength-checker.git
 cd password-strength-checker
 ```
-
-   2️⃣ Create a Virtual Environment
+---
+   ###2️⃣ Create a Virtual Environment
 ```bash
 python -m venv venv
 ```
