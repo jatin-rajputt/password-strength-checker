@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>PassChecker - Secure Password Strength Checker | Test Your Password Security</title>
+    <meta name="description" content="Free online password strength checker. Test your password security and get instant feedback on strength, crack time, and improvement tips. Secure, private, and fast.">
+    <meta name="keywords" content="password checker, password strength, password security, password tester, password crack time, secure password, password analysis">
+    <meta name="author" content="PassChecker">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google site verification -->
+     <meta name="google-site-verification" content="29CnmVlPwO8uPHulbQR6KYzol5wqfKfgDzUtH2isZPk" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paass-cheker.vercel.app/">
+    <meta property="og:title" content="PassChecker - Secure Password Strength Checker">
+    <meta property="og:description" content="Free online password strength checker. Test your password security and get instant feedback on strength, crack time, and improvement tips.">
+    <meta property="og:image" content="https://paass-cheker.vercel.app/static/images/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://paass-cheker.vercel.app/">
+    <meta property="twitter:title" content="PassChecker - Secure Password Strength Checker">
+    <meta property="twitter:description" content="Free online password strength checker. Test your password security and get instant feedback on strength, crack time, and improvement tips.">
+    <meta property="twitter:image" content="https://paass-cheker.vercel.app/static/images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PassChecker</h1>
+            <p>Check your password strength securely</p>
+        </header>
+        
+        <main>
+            <form id="passwordForm">
+                <div class="form-group">
+                    <label for="password">Enter Password:</label>
+                    <div class="password-input-container">
+                        <input type="password" id="password" name="password" required>
+                        <button type="button" id="togglePassword" class="toggle-password-btn" title="Show/Hide password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <button type="submit">Check Password Strength</button>
+            </form>
+            
+            <div id="result" class="result-container" style="display: none;">
+                <div class="score-container">
+                    <div class="score-display">
+                        <span id="scoreValue">0</span>/100
+                    </div>
+                    <div class="strength-bar">
+                        <div id="strengthBar" class="strength-fill"></div>
+                    </div>
+                    <div id="strengthLevel">Not analyzed</div>
+                    
+                    <div class="crack-time-container">
+                        <h3>Time to crack your password:</h3>
+                        <div id="crackTime" class="crack-time-value">N/A</div>
+                    </div>
+                </div>
+                
+                <div id="tipsContainer" class="tips-container">
+                    <h3>Tips to improve your password:</h3>
+                    <ul id="tipsList"></ul>
+                </div>
+                
+                <div id="commonPasswordWarning" class="warning" style="display: none;">
+                    ⚠️ This password is in the list of commonly used passwords. Please choose a different one.
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Your password is never stored or transmitted to any server.</p>
+            <p>Created with 💜 by jatin thakur</p>
+            
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
