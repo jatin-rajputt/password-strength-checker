@@ -65,7 +65,7 @@ password-strength-checker/
     ├── script.js
     └── logo.png
 
----
+
 
 ## ⚙️ Installation & Setup Guide (Step-by-Step)
 
