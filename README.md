@@ -29,9 +29,9 @@ and academic demonstration**.
    - Common password list
    - Length & character diversity
    - Sequential and repeated patterns
-4. Entropy is calculated
-5. Crack time is estimated assuming an **offline attack**
-6. Result is returned as JSON
+4. Entropy is calculated  
+5. Crack time is estimated assuming an **offline attack**  
+6. Result is returned as JSON  
 
 ---
 
@@ -66,32 +66,12 @@ password-strength-checker/
     └── logo.png
 
 ---
+
 ## ⚙️ Installation & Setup Guide (Step-by-Step)
 
----
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/jatin-rajputt/password-strength-checker.git
 cd password-strength-checker
----
 
-
-2️⃣ Create a Virtual Environment (Recommended)
-```bash
-python -m venv venv
-
----
-Activate the virtual environment:
-```bash
-Windows (PowerShell):
-
-venv\Scripts\Activate
----
-
----
-
-### 3️⃣ Install Project Dependencies
-
-Make sure the virtual environment is activated `(venv)` and then run:
-
-```bash
-pip install -r requirements.txt
