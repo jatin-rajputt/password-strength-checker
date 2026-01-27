@@ -76,21 +76,30 @@ git clone https://github.com/jatin-rajputt/password-strength-checker.git
 cd password-strength-checker
 ```
 ###2️⃣ Create a Virtual Environment
+```bash
 python -m venv venv
+```
 ###3️⃣ Activate the Virtual Environment
+
 Windows (PowerShell):
-
+```bash
 venv\Scripts\Activate
+```
 Linux / macOS:
-
+```bash
 source venv/bin/activate
+```
 When activated, your terminal will show:
 
 (venv)
 ###4️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 ###5️⃣ Run the Application
+```bash
 python main.py
+```
 Open your browser and visit:
 
 http://127.0.0.1:5000
